@@ -1,7 +1,3 @@
-/* ================================
-   RESET
-================================ */
-
 * {
     margin: 0;
     padding: 0;
@@ -25,18 +21,14 @@ a {
 }
 
 
-/* ================================
-   NAVBAR
-================================ */
+/* NAVBAR */
 
 .navbar {
     height: 74px;
     margin: 0 4%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     border-bottom: 1px solid #e4d5c8;
 }
 
@@ -47,14 +39,12 @@ a {
 
 .navbar nav {
     display: flex;
-    align-items: center;
     gap: 32px;
 }
 
 .navbar nav a {
     font-size: 15px;
-    color: #3f2923;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .navbar nav a:hover {
@@ -62,26 +52,16 @@ a {
 }
 
 
-/* ================================
-   HERO
-================================ */
+/* HERO */
 
 .hero {
     min-height: calc(100vh - 74px);
-
     padding: 40px 4%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 60px;
 }
-
-
-/* ================================
-   HERO LEFT
-================================ */
 
 .hero-content {
     width: 48%;
@@ -89,85 +69,56 @@ a {
 
 .small-heading {
     color: #a76747;
-
     font-size: 13px;
-
     font-weight: bold;
-
     letter-spacing: 5px;
-
     margin-bottom: 38px;
 }
 
 .hero h1 {
     font-size: 62px;
-
     line-height: 1.02;
-
     font-weight: 600;
-
     color: #432d27;
-
     margin-bottom: 28px;
 }
 
 .hero-text {
     max-width: 560px;
-
     font-size: 18px;
-
     line-height: 1.8;
-
     color: #795e52;
-
     margin-bottom: 35px;
 }
 
 
-/* ================================
-   HERO RIGHT
-================================ */
+/* RIGHT PHOTO AREA */
 
 .hero-right {
     width: 48%;
     max-width: 560px;
 }
 
-
-/* ================================
-   FOUR PHOTO GRID
-================================ */
-
 .hero-gallery {
     width: 100%;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 14px;
 }
 
 .image-card {
     width: 100%;
-
     height: 245px;
-
     overflow: hidden;
-
     border-radius: 18px;
-
     background: #e8d9cd;
 }
 
 .image-card img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
-
     transition: transform 0.5s ease;
 }
 
@@ -176,22 +127,16 @@ a {
 }
 
 
-/* ================================
-   VIEW DESIGNS BELOW PHOTOS
-================================ */
+/* VIEW DESIGNS */
 
 .photo-button {
     width: 100%;
-
     text-align: center;
-
-    margin-top: 24px;
+    margin-top: 22px;
 }
 
 
-/* ================================
-   BUTTONS
-================================ */
+/* BUTTONS */
 
 .hero-buttons {
     display: flex;
@@ -200,50 +145,36 @@ a {
 
 .btn {
     display: inline-block;
-
     padding: 14px 28px;
-
     border-radius: 30px;
-
     font-size: 15px;
-
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 .primary-btn {
     background: #a76747;
-
     color: white;
-
     border: 1px solid #a76747;
 }
 
 .primary-btn:hover {
     background: #8f5539;
-
     transform: translateY(-2px);
 }
 
 .secondary-btn {
     background: transparent;
-
     color: #a76747;
-
     border: 1px solid #a76747;
 }
 
 .secondary-btn:hover {
     background: #a76747;
-
     color: white;
-
-    transform: translateY(-2px);
 }
 
 
-/* ================================
-   COMMON SECTIONS
-================================ */
+/* SECTIONS */
 
 .section {
     padding: 100px 7%;
@@ -251,47 +182,33 @@ a {
 
 .section-label {
     color: #a76747;
-
     font-size: 12px;
-
     letter-spacing: 4px;
-
     margin-bottom: 18px;
 }
 
 .section h2 {
     font-size: 48px;
-
     margin-bottom: 25px;
-
-    font-weight: 600;
 }
 
 
-/* ================================
-   ABOUT
-================================ */
+/* ABOUT */
 
 .about {
     max-width: 900px;
-
     margin: auto;
-
     text-align: center;
 }
 
 .about p {
     color: #795e52;
-
     font-size: 17px;
-
     line-height: 1.8;
 }
 
 
-/* ================================
-   SERVICES
-================================ */
+/* SERVICES */
 
 .services {
     background: #efe2d6;
@@ -299,24 +216,17 @@ a {
 
 .service-grid {
     margin-top: 45px;
-
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 20px;
 }
 
 .service-card {
     background: #f8f0e7;
-
     padding: 30px 25px;
-
     border-radius: 15px;
-
     min-height: 220px;
-
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .service-card:hover {
@@ -325,26 +235,19 @@ a {
 
 .service-card span {
     color: #a76747;
-
-    font-size: 13px;
 }
 
 .service-card h3 {
     margin: 25px 0 12px;
-
     font-size: 22px;
 }
 
 .service-card p {
     color: #795e52;
-
-    line-height: 1.6;
 }
 
 
-/* ================================
-   GALLERY
-================================ */
+/* GALLERY */
 
 .gallery {
     text-align: center;
@@ -352,41 +255,29 @@ a {
 
 .gallery-intro {
     color: #795e52;
-
     margin-bottom: 40px;
 }
 
 .gallery-grid {
     max-width: 1100px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 18px;
 }
 
 .gallery-item {
     height: 360px;
-
     overflow: hidden;
-
     border-radius: 16px;
-
-    background: #e8d9cd;
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
-
-    transition: transform 0.5s ease;
+    transition: 0.5s;
 }
 
 .gallery-item:hover img {
@@ -394,75 +285,52 @@ a {
 }
 
 
-/* ================================
-   CONTACT
-================================ */
+/* CONTACT */
 
 .contact {
     text-align: center;
-
     background: #efe2d6;
 }
 
 .contact p {
     max-width: 650px;
-
     margin: 0 auto 30px;
-
     color: #795e52;
-
-    line-height: 1.7;
 }
 
 .contact-buttons {
     display: flex;
-
     justify-content: center;
-
     gap: 15px;
 }
 
 
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 
 footer {
     text-align: center;
-
     padding: 45px 20px;
-
     background: #3f2923;
-
     color: white;
 }
 
 .footer-logo {
     font-size: 25px;
-
     font-weight: bold;
-
-    margin-bottom: 8px;
 }
 
 footer p {
     font-family: Arial, sans-serif;
-
     font-size: 13px;
-
     opacity: 0.8;
 }
 
 .copyright {
     margin-top: 15px;
-
-    font-size: 11px !important;
 }
 
 
-/* ================================
-   TABLET
-================================ */
+/* TABLET */
 
 @media (max-width: 1000px) {
 
@@ -472,10 +340,6 @@ footer p {
 
     .hero h1 {
         font-size: 50px;
-    }
-
-    .hero-content {
-        width: 47%;
     }
 
     .hero-right {
@@ -492,37 +356,27 @@ footer p {
 }
 
 
-/* ================================
-   MOBILE
-================================ */
+/* MOBILE */
 
 @media (max-width: 750px) {
 
     .navbar {
         height: auto;
-
         padding: 20px 0;
-
         flex-direction: column;
-
         gap: 18px;
     }
 
     .navbar nav {
         gap: 18px;
-
         flex-wrap: wrap;
-
         justify-content: center;
     }
 
     .hero {
         min-height: auto;
-
         padding: 60px 5%;
-
         flex-direction: column;
-
         align-items: flex-start;
     }
 
@@ -532,7 +386,6 @@ footer p {
 
     .hero-right {
         width: 100%;
-
         max-width: none;
     }
 
@@ -550,9 +403,7 @@ footer p {
 }
 
 
-/* ================================
-   SMALL MOBILE
-================================ */
+/* SMALL MOBILE */
 
 @media (max-width: 500px) {
 
@@ -568,14 +419,8 @@ footer p {
         font-size: 16px;
     }
 
-    .hero-gallery {
-        gap: 10px;
-    }
-
     .image-card {
         height: 180px;
-
-        border-radius: 12px;
     }
 
     .service-grid {
@@ -593,5 +438,4 @@ footer p {
     .section {
         padding: 75px 5%;
     }
-
 }
