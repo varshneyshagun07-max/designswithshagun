@@ -4,294 +4,312 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Designs With Shagun</title>
+    <title>Mehndi Designs</title>
 
-    <link rel="stylesheet" href="/designswithshagun/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf5;
+            color: #3d2418;
+        }
+
+        header {
+            background: #5a2d1c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        nav {
+            background: #3d1d12;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f5c49c;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f8e7d8;
+        }
+
+        .hero h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .book-btn {
+            display: inline-block;
+            background: #5a2d1c;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        .book-btn:hover {
+            background: #8a4b32;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin: 40px 0 25px;
+        }
+
+        .gallery {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding-bottom: 50px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .view-btn {
+            display: inline-block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+            padding: 10px 22px;
+            background: #5a2d1c;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .view-btn:hover {
+            background: #8a4b32;
+            transform: scale(1.05);
+        }
+
+        .about {
+            background: #f8e7d8;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .contact h2 {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        footer {
+            background: #3d1d12;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 800px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<header class="navbar">
-
-    <div class="logo">
-        Designs With Shagun
-    </div>
+    <header>
+        <h1>✨ Mehndi by Shagun ✨</h1>
+        <p>Beautiful Mehndi Designs for Every Occasion</p>
+    </header>
 
     <nav>
         <a href="#home">Home</a>
+        <a href="#designs">Designs</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
     </nav>
 
-</header>
+    <section class="hero" id="home">
+        <h2>Beautiful Mehndi Designs</h2>
+        <p>Explore elegant and beautiful mehndi designs for your special day.</p>
+
+        <a href="#designs" class="book-btn">
+            Explore Designs
+        </a>
+    </section>
 
 
-<section id="home" class="hero">
+    <h2 class="section-title" id="designs">
+        Our Mehndi Designs 🌿
+    </h2>
 
-    <div class="hero-content">
 
-        <p class="small-heading">
-            MEHNDI ARTIST
+    <section class="gallery">
+
+        <div class="card">
+            <img src="mehndi1.jpeg" alt="Mehndi Design 1">
+            <a href="#" class="view-btn">View Design</a>
+        </div>
+
+        <div class="card">
+            <img src="mehndi2.png" alt="Mehndi Design 2">
+            <a href="#" class="view-btn">View Design</a>
+        </div>
+
+        <div class="card">
+            <img src="mehndi3.png" alt="Mehndi Design 3">
+            <a href="#" class="view-btn">View Design</a>
+        </div>
+
+        <div class="card">
+            <img src="mehndi4.png" alt="Mehndi Design 4">
+            <a href="#" class="view-btn">View Design</a>
+        </div>
+
+        <div class="card">
+            <img src="mehndi5.png" alt="Mehndi Design 5">
+            <a href="#" class="view-btn">View Design</a>
+        </div>
+
+        <div class="card">
+            <img src="mehndi6.png" alt="Mehndi Design 6">
+            <a href="#" class="view-btn">View Design</a>
+        </div>
+
+        <div class="card">
+            <img src="mehndi7.png" alt="Mehndi Design 7">
+            <a href="#" class="view-btn">View Design</a>
+        </div>
+
+        <div class="card">
+            <img src="mehndi8.png" alt="Mehndi Design 8">
+            <a href="#" class="view-btn">View Design</a>
+        </div>
+
+        <div class="card">
+            <img src="mehndi9.png" alt="Mehndi Design 9">
+            <a href="#" class="view-btn">View Design</a>
+        </div>
+
+    </section>
+
+
+    <section class="about" id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Welcome to Mehndi by Shagun!
+            We create beautiful and elegant mehndi designs
+            for weddings, festivals and special occasions.
         </p>
 
-        <h1>
-            Beautiful Mehndi,<br>
-            Made With Love.
-        </h1>
-
-        <p class="hero-text">
-            Elegant and traditional mehndi designs created specially
-            for your beautiful moments.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#contact" class="btn secondary-btn">
-                Book Now
-            </a>
-
-        </div>
-
-    </div>
+    </section>
 
 
-    <div class="hero-right">
+    <section class="contact" id="contact">
 
-        <div class="hero-gallery">
+        <h2>Book Your Mehndi ✨</h2>
 
-            <div class="image-card">
-                <img src="/designswithshagun/mehndi1.jpeg"
-                     alt="Mehndi Design 1">
-            </div>
+        <p>For bookings and enquiries, contact us on WhatsApp.</p>
 
-            <div class="image-card">
-                <img src="/designswithshagun/mehndi2.png"
-                     alt="Mehndi Design 2">
-            </div>
+        <br>
 
-            <div class="image-card">
-                <img src="/designswithshagun/mehndi3.png"
-                     alt="Mehndi Design 3">
-            </div>
-
-            <div class="image-card">
-                <img src="/designswithshagun/mehndi4.png"
-                     alt="Mehndi Design 4">
-            </div>
-
-        </div>
-
-        <div class="photo-button">
-            <a href="#gallery" class="btn primary-btn">
-                View Designs
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="about" class="about section">
-
-    <div class="section-label">
-        ABOUT ME
-    </div>
-
-    <h2>
-        Art That Tells Your Story
-    </h2>
-
-    <p>
-        Beautiful mehndi designs created with love, patience and
-        attention to every detail. From simple designs to bridal
-        mehndi, every design is made specially for you.
-    </p>
-
-</section>
-
-
-<section id="services" class="services section">
-
-    <div class="section-label">
-        MY SERVICES
-    </div>
-
-    <h2>
-        What I Offer
-    </h2>
-
-    <div class="service-grid">
-
-        <div class="service-card">
-            <span>01</span>
-            <h3>Bridal Mehndi</h3>
-            <p>
-                Detailed and elegant bridal mehndi designs
-                for your special day.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <span>02</span>
-            <h3>Traditional Mehndi</h3>
-            <p>
-                Beautiful traditional patterns perfect
-                for festivals and celebrations.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <span>03</span>
-            <h3>Arabic Mehndi</h3>
-            <p>
-                Stylish Arabic-inspired mehndi designs
-                with beautiful floral patterns.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <span>04</span>
-            <h3>Minimal Mehndi</h3>
-            <p>
-                Simple and elegant designs for those
-                who love a minimal look.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="gallery" class="gallery section">
-
-    <div class="section-label">
-        MY WORK
-    </div>
-
-    <h2>
-        Mehndi Gallery
-    </h2>
-
-    <p class="gallery-intro">
-        A collection of my favourite mehndi designs.
-    </p>
-
-    <div class="gallery-grid">
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi1.jpeg"
-                 alt="Mehndi Design 1">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi2.png"
-                 alt="Mehndi Design 2">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi3.png"
-                 alt="Mehndi Design 3">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi4.png"
-                 alt="Mehndi Design 4">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi5.png"
-                 alt="Mehndi Design 5">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi6.png"
-                 alt="Mehndi Design 6">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi7.png"
-                 alt="Mehndi Design 7">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi8.png"
-                 alt="Mehndi Design 8">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi9.png"
-                 alt="Mehndi Design 9">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi10.png"
-                 alt="Mehndi Design 10">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi11.png"
-                 alt="Mehndi Design 11">
-        </div>
-
-        <div class="gallery-item">
-            <img src="/designswithshagun/mehndi13.png"
-                 alt="Mehndi Design 13">
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="contact" class="contact section">
-
-    <div class="section-label">
-        CONTACT
-    </div>
-
-    <h2>
-        Let's Create Something Beautiful
-    </h2>
-
-    <p>
-        Ready to book your mehndi? Get in touch and let's
-        create a beautiful design for your special occasion.
-    </p>
-
-    <div class="contact-buttons">
-
-        <a href="https://wa.me/" class="btn primary-btn">
-            WhatsApp Me
+        <a href="https://wa.me/91XXXXXXXXXX" class="book-btn">
+            Book on WhatsApp
         </a>
 
-        <a href="mailto:" class="btn secondary-btn">
-            Email Me
-        </a>
-
-    </div>
-
-</section>
+    </section>
 
 
-<footer>
-
-    <div class="footer-logo">
-        Designs With Shagun
-    </div>
-
-    <p>
-        Mehndi Artist • Designs With Love
-    </p>
-
-    <p class="copyright">
-        © 2026 Designs With Shagun. All Rights Reserved.
-    </p>
-
-</footer>
+    <footer>
+        <p>© 2026 Mehndi by Shagun. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
