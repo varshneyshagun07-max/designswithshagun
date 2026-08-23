@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mehndi Designs</title>
+    <title>Mehndi by Shagun</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -19,15 +24,18 @@
             color: #3d2418;
         }
 
+
+        /* HEADER */
+
         header {
             background: #5a2d1c;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 25px 15px;
         }
 
         header h1 {
-            font-size: 32px;
+            font-size: 34px;
             margin-bottom: 8px;
         }
 
@@ -35,13 +43,16 @@
             font-size: 16px;
         }
 
+
+        /* NAVIGATION */
+
         nav {
             background: #3d1d12;
-            padding: 12px;
+            padding: 14px;
             text-align: center;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
         }
 
         nav a {
@@ -49,20 +60,24 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 16px;
+            transition: 0.3s;
         }
 
         nav a:hover {
-            color: #f5c49c;
+            color: #f3c29e;
         }
+
+
+        /* HERO */
 
         .hero {
             text-align: center;
-            padding: 50px 20px;
+            padding: 65px 20px;
             background: #f8e7d8;
         }
 
         .hero h2 {
-            font-size: 35px;
+            font-size: 38px;
             margin-bottom: 15px;
         }
 
@@ -71,246 +86,550 @@
             margin-bottom: 25px;
         }
 
-        .book-btn {
+        .explore-btn {
             display: inline-block;
             background: #5a2d1c;
             color: white;
-            padding: 12px 25px;
+            padding: 13px 28px;
             border-radius: 25px;
             text-decoration: none;
+            transition: 0.3s;
         }
 
-        .book-btn:hover {
+        .explore-btn:hover {
             background: #8a4b32;
+            transform: scale(1.05);
         }
+
+
+        /* SECTION TITLE */
 
         .section-title {
             text-align: center;
-            font-size: 30px;
-            margin: 40px 0 25px;
+            font-size: 32px;
+            margin: 45px 0 30px;
         }
+
+
+        /* GALLERY */
 
         .gallery {
             width: 90%;
-            max-width: 1100px;
+            max-width: 1150px;
             margin: auto;
+
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            padding-bottom: 50px;
+
+            gap: 30px;
+
+            padding-bottom: 60px;
         }
+
+
+        /* CARD */
 
         .card {
             background: white;
-            border-radius: 15px;
+
             padding: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+
+            border-radius: 16px;
+
             text-align: center;
+
+            box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+
             transition: 0.3s;
         }
 
         .card:hover {
             transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
         }
+
+
+        /* IMAGE */
 
         .card img {
             width: 100%;
-            height: 320px;
+
+            height: 330px;
+
             object-fit: cover;
+
             border-radius: 12px;
+
             display: block;
         }
 
+
+        /* VIEW DESIGN BUTTON */
+
         .view-btn {
             display: inline-block;
-            margin-top: 12px;
+
+            margin-top: 14px;
             margin-bottom: 5px;
-            padding: 10px 22px;
+
+            padding: 11px 25px;
+
             background: #5a2d1c;
+
             color: white;
+
             text-decoration: none;
-            border-radius: 20px;
+
+            border-radius: 25px;
+
             font-size: 15px;
+
             transition: 0.3s;
         }
 
         .view-btn:hover {
             background: #8a4b32;
-            transform: scale(1.05);
+
+            transform: scale(1.06);
         }
+
+
+        /* ABOUT */
 
         .about {
             background: #f8e7d8;
-            padding: 50px 20px;
+
+            padding: 60px 20px;
+
             text-align: center;
         }
 
         .about h2 {
-            font-size: 30px;
-            margin-bottom: 15px;
+            font-size: 32px;
+
+            margin-bottom: 18px;
         }
 
         .about p {
-            max-width: 700px;
+            max-width: 750px;
+
             margin: auto;
-            line-height: 1.7;
+
+            line-height: 1.8;
+
+            font-size: 17px;
         }
+
+
+        /* CONTACT */
 
         .contact {
             text-align: center;
-            padding: 50px 20px;
+
+            padding: 60px 20px;
         }
 
         .contact h2 {
+            font-size: 32px;
+
             margin-bottom: 15px;
-            font-size: 30px;
         }
+
+        .contact p {
+            font-size: 17px;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* WHATSAPP BUTTON */
+
+        .whatsapp-btn {
+            display: inline-block;
+
+            background: #25D366;
+
+            color: white;
+
+            padding: 13px 28px;
+
+            border-radius: 25px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.06);
+        }
+
+
+        /* FOOTER */
 
         footer {
             background: #3d1d12;
+
             color: white;
+
             text-align: center;
-            padding: 20px;
+
+            padding: 22px;
         }
 
-        @media (max-width: 800px) {
+
+        /* TABLET */
+
+        @media (max-width: 850px) {
+
             .gallery {
                 grid-template-columns: repeat(2, 1fr);
             }
+
         }
 
+
+        /* MOBILE */
+
         @media (max-width: 550px) {
-            .gallery {
-                grid-template-columns: 1fr;
-            }
 
             header h1 {
-                font-size: 26px;
+                font-size: 27px;
             }
 
             .hero h2 {
-                font-size: 28px;
+                font-size: 29px;
             }
 
             nav a {
                 margin: 0 7px;
                 font-size: 14px;
             }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .card img {
+                height: 350px;
+            }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+    <!-- HEADER -->
+
     <header>
+
         <h1>✨ Mehndi by Shagun ✨</h1>
+
         <p>Beautiful Mehndi Designs for Every Occasion</p>
+
     </header>
 
+
+
+    <!-- NAVIGATION -->
+
     <nav>
+
         <a href="#home">Home</a>
+
         <a href="#designs">Designs</a>
+
         <a href="#about">About</a>
+
         <a href="#contact">Contact</a>
+
     </nav>
 
-    <section class="hero" id="home">
-        <h2>Beautiful Mehndi Designs</h2>
-        <p>Explore elegant and beautiful mehndi designs for your special day.</p>
 
-        <a href="#designs" class="book-btn">
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <h2>Beautiful Mehndi Designs 🌿</h2>
+
+        <p>
+            Explore elegant and beautiful mehndi designs
+            for weddings, festivals and special occasions.
+        </p>
+
+        <a href="#designs" class="explore-btn">
             Explore Designs
         </a>
+
     </section>
 
 
+
+    <!-- DESIGNS -->
+
     <h2 class="section-title" id="designs">
-        Our Mehndi Designs 🌿
+        Our Mehndi Designs ✨
     </h2>
+
 
 
     <section class="gallery">
 
-        <div class="card">
-            <img src="mehndi1.jpeg" alt="Mehndi Design 1">
-            <a href="#" class="view-btn">View Design</a>
-        </div>
+
+        <!-- IMAGE 1 -->
 
         <div class="card">
-            <img src="mehndi2.png" alt="Mehndi Design 2">
-            <a href="#" class="view-btn">View Design</a>
+
+            <img
+                src="mehndi1.jpeg"
+                alt="Mehndi Design 1"
+            >
+
+            <a
+                href="mehndi1.jpeg"
+                target="_blank"
+                class="view-btn"
+            >
+                View Design
+            </a>
+
         </div>
 
-        <div class="card">
-            <img src="mehndi3.png" alt="Mehndi Design 3">
-            <a href="#" class="view-btn">View Design</a>
-        </div>
+
+
+        <!-- IMAGE 2 -->
 
         <div class="card">
-            <img src="mehndi4.png" alt="Mehndi Design 4">
-            <a href="#" class="view-btn">View Design</a>
+
+            <img
+                src="mehndi2.png"
+                alt="Mehndi Design 2"
+            >
+
+            <a
+                href="mehndi2.png"
+                target="_blank"
+                class="view-btn"
+            >
+                View Design
+            </a>
+
         </div>
 
-        <div class="card">
-            <img src="mehndi5.png" alt="Mehndi Design 5">
-            <a href="#" class="view-btn">View Design</a>
-        </div>
+
+
+        <!-- IMAGE 3 -->
 
         <div class="card">
-            <img src="mehndi6.png" alt="Mehndi Design 6">
-            <a href="#" class="view-btn">View Design</a>
+
+            <img
+                src="mehndi3.png"
+                alt="Mehndi Design 3"
+            >
+
+            <a
+                href="mehndi3.png"
+                target="_blank"
+                class="view-btn"
+            >
+                View Design
+            </a>
+
         </div>
 
-        <div class="card">
-            <img src="mehndi7.png" alt="Mehndi Design 7">
-            <a href="#" class="view-btn">View Design</a>
-        </div>
+
+
+        <!-- IMAGE 4 -->
 
         <div class="card">
-            <img src="mehndi8.png" alt="Mehndi Design 8">
-            <a href="#" class="view-btn">View Design</a>
+
+            <img
+                src="mehndi4.png"
+                alt="Mehndi Design 4"
+            >
+
+            <a
+                href="mehndi4.png"
+                target="_blank"
+                class="view-btn"
+            >
+                View Design
+            </a>
+
         </div>
 
+
+
+        <!-- IMAGE 5 -->
+
         <div class="card">
-            <img src="mehndi9.png" alt="Mehndi Design 9">
-            <a href="#" class="view-btn">View Design</a>
+
+            <img
+                src="mehndi5.png"
+                alt="Mehndi Design 5"
+            >
+
+            <a
+                href="mehndi5.png"
+                target="_blank"
+                class="view-btn"
+            >
+                View Design
+            </a>
+
         </div>
+
+
+
+        <!-- IMAGE 6 -->
+
+        <div class="card">
+
+            <img
+                src="mehndi6.png"
+                alt="Mehndi Design 6"
+            >
+
+            <a
+                href="mehndi6.png"
+                target="_blank"
+                class="view-btn"
+            >
+                View Design
+            </a>
+
+        </div>
+
+
+
+        <!-- IMAGE 7 -->
+
+        <div class="card">
+
+            <img
+                src="mehndi7.png"
+                alt="Mehndi Design 7"
+            >
+
+            <a
+                href="mehndi7.png"
+                target="_blank"
+                class="view-btn"
+            >
+                View Design
+            </a>
+
+        </div>
+
+
+
+        <!-- IMAGE 8 -->
+
+        <div class="card">
+
+            <img
+                src="mehndi8.png"
+                alt="Mehndi Design 8"
+            >
+
+            <a
+                href="mehndi8.png"
+                target="_blank"
+                class="view-btn"
+            >
+                View Design
+            </a>
+
+        </div>
+
+
+
+        <!-- IMAGE 9 -->
+
+        <div class="card">
+
+            <img
+                src="mehndi9.png"
+                alt="Mehndi Design 9"
+            >
+
+            <a
+                href="mehndi9.png"
+                target="_blank"
+                class="view-btn"
+            >
+                View Design
+            </a>
+
+        </div>
+
 
     </section>
 
 
+
+    <!-- ABOUT -->
+
     <section class="about" id="about">
 
-        <h2>About Us</h2>
+        <h2>About Us 🤎</h2>
 
         <p>
             Welcome to Mehndi by Shagun!
             We create beautiful and elegant mehndi designs
             for weddings, festivals and special occasions.
+            Choose your favourite design and book your appointment.
         </p>
 
     </section>
 
 
+
+    <!-- CONTACT -->
+
     <section class="contact" id="contact">
 
         <h2>Book Your Mehndi ✨</h2>
 
-        <p>For bookings and enquiries, contact us on WhatsApp.</p>
+        <p>
+            For bookings and enquiries, contact us on WhatsApp.
+        </p>
 
-        <br>
 
-        <a href="https://wa.me/91XXXXXXXXXX" class="book-btn">
-            Book on WhatsApp
+        <!-- APNA NUMBER YAHAN DALO -->
+
+        <a
+            href="https://wa.me/91XXXXXXXXXX"
+            target="_blank"
+            class="whatsapp-btn"
+        >
+            💬 Book on WhatsApp
         </a>
 
     </section>
 
 
+
+    <!-- FOOTER -->
+
     <footer>
-        <p>© 2026 Mehndi by Shagun. All Rights Reserved.</p>
+
+        <p>
+            © 2026 Mehndi by Shagun. All Rights Reserved.
+        </p>
+
     </footer>
 
+
 </body>
+
 </html>
    
