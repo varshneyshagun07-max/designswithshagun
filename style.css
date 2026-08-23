@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -14,220 +16,364 @@ body {
     color: #3d2418;
 }
 
-/* HEADER */
+
+/* ================= HEADER ================= */
 
 header {
     background: #5a2d1c;
     color: white;
+
+    padding: 25px 20px;
+
     text-align: center;
-    padding: 25px 15px;
 }
+
 
 header h1 {
     font-size: 34px;
     margin-bottom: 8px;
 }
 
+
 header p {
     font-size: 16px;
 }
 
-/* NAVIGATION */
+
+/* ================= NAVIGATION ================= */
 
 nav {
     background: #3d1d12;
-    padding: 14px;
+
+    padding: 14px 20px;
+
     text-align: center;
+
     position: sticky;
     top: 0;
+
     z-index: 1000;
 }
 
+
 nav a {
     color: white;
+
     text-decoration: none;
-    margin: 0 15px;
+
+    margin: 0 18px;
+
     font-size: 16px;
+
     transition: 0.3s;
 }
+
 
 nav a:hover {
     color: #f3c29e;
 }
 
-/* HERO */
+
+/* ================= HERO ================= */
 
 .hero {
-    text-align: center;
-    padding: 65px 20px;
     background: #f8e7d8;
+
+    padding: 70px 30px;
+
+    text-align: center;
 }
+
 
 .hero h2 {
     font-size: 38px;
+
     margin-bottom: 15px;
 }
+
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 25px;
+
+    margin-bottom: 28px;
 }
+
 
 .explore-btn {
     display: inline-block;
+
     background: #5a2d1c;
+
     color: white;
+
     padding: 13px 28px;
+
     border-radius: 25px;
+
     text-decoration: none;
+
     transition: 0.3s;
 }
+
 
 .explore-btn:hover {
     background: #8a4b32;
+
     transform: scale(1.05);
 }
 
-/* SECTION TITLE */
+
+/* ================= SECTION TITLE ================= */
 
 .section-title {
     text-align: center;
+
     font-size: 32px;
-    margin: 45px 0 30px;
+
+    margin: 50px 0 35px;
 }
 
-/* GALLERY */
+
+/* ================= GALLERY ================= */
 
 .gallery {
-    width: 90%;
-    max-width: 1150px;
-    margin: auto;
+    width: 92%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding-bottom: 60px;
+
+    gap: 35px;
+
+    padding-bottom: 70px;
 }
 
-/* CARD */
+
+/* ================= CARD ================= */
 
 .card {
     background: white;
-    padding: 12px;
+
+    padding: 14px;
+
     border-radius: 16px;
+
     text-align: center;
+
     box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+
     transition: 0.3s;
 }
+
 
 .card:hover {
     transform: translateY(-7px);
+
     box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 
-/* IMAGE */
+
+/* ================= IMAGE ================= */
 
 .card img {
     width: 100%;
-    height: 330px;
+
+    height: 340px;
+
     object-fit: cover;
+
     border-radius: 12px;
+
     display: block;
 }
 
-/* VIEW DESIGN */
+
+/* ================= VIEW DESIGN ================= */
 
 .view-btn {
     display: inline-block;
+
     margin-top: 14px;
+
     margin-bottom: 5px;
+
     padding: 11px 25px;
+
     background: #5a2d1c;
+
     color: white;
-    text-decoration: none;
-    border-radius: 25px;
+
+    font-family: Arial, sans-serif;
+
     font-size: 15px;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
     transition: 0.3s;
 }
+
 
 .view-btn:hover {
     background: #8a4b32;
+
     transform: scale(1.06);
 }
 
-/* ABOUT */
+
+/* ================= ABOUT ================= */
 
 .about {
     background: #f8e7d8;
-    padding: 60px 20px;
+
+    padding: 60px 25px;
+
     text-align: center;
 }
+
 
 .about h2 {
     font-size: 32px;
+
     margin-bottom: 18px;
 }
 
+
 .about p {
     max-width: 750px;
+
     margin: auto;
+
     line-height: 1.8;
+
     font-size: 17px;
 }
 
-/* CONTACT */
+
+/* ================= CONTACT ================= */
 
 .contact {
+    padding: 60px 25px;
+
     text-align: center;
-    padding: 60px 20px;
 }
+
 
 .contact h2 {
     font-size: 32px;
+
     margin-bottom: 15px;
 }
 
+
 .contact p {
     font-size: 17px;
-    margin-bottom: 20px;
+
+    margin-bottom: 25px;
 }
 
-/* WHATSAPP */
+
+/* ================= SOCIAL BUTTONS ================= */
+
+.social-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ================= WHATSAPP ================= */
 
 .whatsapp-btn {
     display: inline-block;
+
     background: #25D366;
+
     color: white;
+
     padding: 13px 28px;
+
     border-radius: 25px;
+
     text-decoration: none;
+
     font-weight: bold;
+
     transition: 0.3s;
 }
+
 
 .whatsapp-btn:hover {
     transform: scale(1.06);
 }
 
-/* FOOTER */
+
+/* ================= INSTAGRAM ================= */
+
+.instagram-btn {
+    display: inline-block;
+
+    background: #5a2d1c;
+
+    color: white;
+
+    padding: 13px 28px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.instagram-btn:hover {
+    background: #8a4b32;
+
+    transform: scale(1.06);
+}
+
+
+/* ================= FOOTER ================= */
 
 footer {
     background: #3d1d12;
+
     color: white;
-    text-align: center;
+
     padding: 22px;
+
+    text-align: center;
 }
 
-/* TABLET */
 
-@media (max-width: 850px) {
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);
+
+        gap: 25px;
     }
 
 }
 
-/* MOBILE */
+
+/* ================= MOBILE ================= */
 
 @media (max-width: 550px) {
 
@@ -235,21 +381,48 @@ footer {
         font-size: 27px;
     }
 
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+
     .hero h2 {
         font-size: 29px;
     }
 
+
     nav a {
         margin: 0 7px;
+
         font-size: 14px;
     }
 
+
     .gallery {
+        width: 94%;
+
         grid-template-columns: 1fr;
+
+        gap: 25px;
     }
+
 
     .card img {
         height: 350px;
+    }
+
+
+    .social-buttons {
+        flex-direction: column;
+    }
+
+
+    .whatsapp-btn,
+    .instagram-btn {
+        width: 230px;
+
+        text-align: center;
     }
 
 }
