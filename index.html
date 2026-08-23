@@ -25,13 +25,13 @@
         }
 
 
-        /* HEADER */
+        /* ================= HEADER ================= */
 
         header {
             background: #5a2d1c;
             color: white;
+            padding: 25px 20px;
             text-align: center;
-            padding: 25px 15px;
         }
 
         header h1 {
@@ -44,12 +44,13 @@
         }
 
 
-        /* NAVIGATION */
+        /* ================= NAVIGATION ================= */
 
         nav {
             background: #3d1d12;
-            padding: 14px;
+            padding: 14px 20px;
             text-align: center;
+
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -58,8 +59,11 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+
+            margin: 0 18px;
+
             font-size: 16px;
+
             transition: 0.3s;
         }
 
@@ -68,12 +72,14 @@
         }
 
 
-        /* HERO */
+        /* ================= HERO ================= */
 
         .hero {
-            text-align: center;
-            padding: 65px 20px;
             background: #f8e7d8;
+
+            padding: 70px 30px;
+
+            text-align: center;
         }
 
         .hero h2 {
@@ -83,16 +89,21 @@
 
         .hero p {
             font-size: 18px;
-            margin-bottom: 25px;
+            margin-bottom: 28px;
         }
 
         .explore-btn {
             display: inline-block;
+
             background: #5a2d1c;
             color: white;
+
             padding: 13px 28px;
+
             border-radius: 25px;
+
             text-decoration: none;
+
             transition: 0.3s;
         }
 
@@ -102,37 +113,41 @@
         }
 
 
-        /* SECTION TITLE */
+        /* ================= SECTION TITLE ================= */
 
         .section-title {
             text-align: center;
+
             font-size: 32px;
-            margin: 45px 0 30px;
+
+            margin: 50px 0 35px;
         }
 
 
-        /* GALLERY */
+        /* ================= GALLERY ================= */
 
         .gallery {
-            width: 90%;
-            max-width: 1150px;
-            margin: auto;
+            width: 92%;
+            max-width: 1250px;
+
+            margin: 0 auto;
 
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
 
-            gap: 30px;
+            gap: 35px;
 
-            padding-bottom: 60px;
+            padding-bottom: 70px;
         }
 
 
-        /* CARD */
+        /* ================= CARD ================= */
 
         .card {
             background: white;
 
-            padding: 12px;
+            padding: 14px;
 
             border-radius: 16px;
 
@@ -145,16 +160,17 @@
 
         .card:hover {
             transform: translateY(-7px);
+
             box-shadow: 0 10px 25px rgba(0,0,0,0.18);
         }
 
 
-        /* IMAGE */
+        /* ================= IMAGE ================= */
 
         .card img {
             width: 100%;
 
-            height: 330px;
+            height: 340px;
 
             object-fit: cover;
 
@@ -164,7 +180,7 @@
         }
 
 
-        /* VIEW DESIGN BUTTON */
+        /* ================= VIEW DESIGN BUTTON ================= */
 
         .view-btn {
             display: inline-block;
@@ -178,11 +194,13 @@
 
             color: white;
 
+            font-family: Arial, sans-serif;
+
+            font-size: 15px;
+
             text-decoration: none;
 
             border-radius: 25px;
-
-            font-size: 15px;
 
             transition: 0.3s;
         }
@@ -194,12 +212,12 @@
         }
 
 
-        /* ABOUT */
+        /* ================= ABOUT ================= */
 
         .about {
             background: #f8e7d8;
 
-            padding: 60px 20px;
+            padding: 60px 25px;
 
             text-align: center;
         }
@@ -221,12 +239,12 @@
         }
 
 
-        /* CONTACT */
+        /* ================= CONTACT ================= */
 
         .contact {
-            text-align: center;
+            padding: 60px 25px;
 
-            padding: 60px 20px;
+            text-align: center;
         }
 
         .contact h2 {
@@ -238,11 +256,11 @@
         .contact p {
             font-size: 17px;
 
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
 
-        /* WHATSAPP BUTTON */
+        /* ================= WHATSAPP ================= */
 
         .whatsapp-btn {
             display: inline-block;
@@ -267,36 +285,42 @@
         }
 
 
-        /* FOOTER */
+        /* ================= FOOTER ================= */
 
         footer {
             background: #3d1d12;
 
             color: white;
 
-            text-align: center;
-
             padding: 22px;
+
+            text-align: center;
         }
 
 
-        /* TABLET */
+        /* ================= TABLET ================= */
 
-        @media (max-width: 850px) {
+        @media (max-width: 900px) {
 
             .gallery {
                 grid-template-columns: repeat(2, 1fr);
+
+                gap: 25px;
             }
 
         }
 
 
-        /* MOBILE */
+        /* ================= MOBILE ================= */
 
         @media (max-width: 550px) {
 
             header h1 {
                 font-size: 27px;
+            }
+
+            .hero {
+                padding: 50px 20px;
             }
 
             .hero h2 {
@@ -305,11 +329,16 @@
 
             nav a {
                 margin: 0 7px;
+
                 font-size: 14px;
             }
 
             .gallery {
+                width: 94%;
+
                 grid-template-columns: 1fr;
+
+                gap: 25px;
             }
 
             .card img {
@@ -326,19 +355,21 @@
 <body>
 
 
-    <!-- HEADER -->
+    <!-- ================= HEADER ================= -->
 
     <header>
 
         <h1>✨ Mehndi by Shagun ✨</h1>
 
-        <p>Beautiful Mehndi Designs for Every Occasion</p>
+        <p>
+            Beautiful Mehndi Designs for Every Occasion
+        </p>
 
     </header>
 
 
 
-    <!-- NAVIGATION -->
+    <!-- ================= NAVIGATION ================= -->
 
     <nav>
 
@@ -354,11 +385,13 @@
 
 
 
-    <!-- HERO -->
+    <!-- ================= HERO ================= -->
 
     <section class="hero" id="home">
 
-        <h2>Beautiful Mehndi Designs 🌿</h2>
+        <h2>
+            Beautiful Mehndi Designs 🌿
+        </h2>
 
         <p>
             Explore elegant and beautiful mehndi designs
@@ -373,10 +406,12 @@
 
 
 
-    <!-- DESIGNS -->
+    <!-- ================= DESIGNS ================= -->
 
     <h2 class="section-title" id="designs">
+
         Our Mehndi Designs ✨
+
     </h2>
 
 
@@ -384,7 +419,7 @@
     <section class="gallery">
 
 
-        <!-- IMAGE 1 -->
+        <!-- DESIGN 1 -->
 
         <div class="card">
 
@@ -405,7 +440,7 @@
 
 
 
-        <!-- IMAGE 2 -->
+        <!-- DESIGN 2 -->
 
         <div class="card">
 
@@ -426,7 +461,7 @@
 
 
 
-        <!-- IMAGE 3 -->
+        <!-- DESIGN 3 -->
 
         <div class="card">
 
@@ -447,7 +482,7 @@
 
 
 
-        <!-- IMAGE 4 -->
+        <!-- DESIGN 4 -->
 
         <div class="card">
 
@@ -468,7 +503,7 @@
 
 
 
-        <!-- IMAGE 5 -->
+        <!-- DESIGN 5 -->
 
         <div class="card">
 
@@ -489,7 +524,7 @@
 
 
 
-        <!-- IMAGE 6 -->
+        <!-- DESIGN 6 -->
 
         <div class="card">
 
@@ -510,7 +545,7 @@
 
 
 
-        <!-- IMAGE 7 -->
+        <!-- DESIGN 7 -->
 
         <div class="card">
 
@@ -531,7 +566,7 @@
 
 
 
-        <!-- IMAGE 8 -->
+        <!-- DESIGN 8 -->
 
         <div class="card">
 
@@ -552,7 +587,7 @@
 
 
 
-        <!-- IMAGE 9 -->
+        <!-- DESIGN 9 -->
 
         <div class="card">
 
@@ -576,11 +611,13 @@
 
 
 
-    <!-- ABOUT -->
+    <!-- ================= ABOUT ================= -->
 
     <section class="about" id="about">
 
-        <h2>About Us 🤎</h2>
+        <h2>
+            About Us 🤎
+        </h2>
 
         <p>
             Welcome to Mehndi by Shagun!
@@ -593,18 +630,17 @@
 
 
 
-    <!-- CONTACT -->
+    <!-- ================= CONTACT ================= -->
 
     <section class="contact" id="contact">
 
-        <h2>Book Your Mehndi ✨</h2>
+        <h2>
+            Book Your Mehndi ✨
+        </h2>
 
         <p>
             For bookings and enquiries, contact us on WhatsApp.
         </p>
-
-
-        <!-- APNA NUMBER YAHAN DALO -->
 
         <a
             href="https://wa.me/91XXXXXXXXXX"
@@ -618,7 +654,7 @@
 
 
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
 
     <footer>
 
